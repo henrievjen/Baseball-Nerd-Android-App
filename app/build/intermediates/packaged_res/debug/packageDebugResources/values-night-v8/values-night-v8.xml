@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_primary">#0F1217</color>
+    <color name="card_stroke">#1AFFFFFF</color>
+    <color name="pre_color">#FFD700</color>
+    <color name="st_color">#F59E0B</color>
+    <color name="surface_dark">#1C2130</color>
+    <color name="surface_elevated">#252D40</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8A94A6</color>
+    <color name="xp_bar_track">#2A3350</color>
+    <color name="xp_level_bg">#002D72</color>
+    <style name="SpinnerDarkTheme" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+    </style>
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:popupBackground">@color/surface_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+    </style>
+    <style name="Theme.BaseballNerd" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mlb_red</item>
+        <item name="colorPrimaryVariant">@color/mlb_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/surface_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+</resources>

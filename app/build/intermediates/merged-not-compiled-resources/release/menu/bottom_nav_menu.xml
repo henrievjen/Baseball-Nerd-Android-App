@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/scoresFragment"
+        android:icon="@drawable/ic_nav_scores"
+        android:title="@string/nav_scores" />
+
+    <item
+        android:id="@+id/standingsFragment"
+        android:icon="@drawable/ic_nav_standings"
+        android:title="@string/nav_standings" />
+
+    <item
+        android:id="@+id/statsFragment"
+        android:icon="@drawable/ic_nav_players"
+        android:title="@string/nav_stats" />
+
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_nav_more"
+        android:title="@string/nav_more" />
+
+</menu>

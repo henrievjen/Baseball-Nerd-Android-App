@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="50dp"
+    android:viewportWidth="1000"
+    android:viewportHeight="500">
+    <!-- Background: Blue and Red -->
+    <path
+        android:fillColor="#002D72"
+        android:pathData="M50,0 L500,0 L500,500 L50,500 C22.4,500 0,477.6 0,450 L0,50 C0,22.4 22.4,0 50,0 Z" />
+    <path
+        android:fillColor="#BA0C2F"
+        android:pathData="M500,0 L950,0 C977.6,0 1000,22.4 1000,50 L1000,450 C1000,477.6 977.6,500 950,500 L500,500 L500,0 Z" />
+
+    <!-- Simplified Batter Silhouette -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M532,104c-35,0 -64,28 -64,63s28,63 64,63s64,-28 64,-63S567,104 532,104z M446,242c-29,0 -52,23 -52,52c0,11 3,21 9,30l-51,33c-1,1 -1,2 -1,3c0,4 3,7 7,7c1,0 3,-1 4,-2l52,-34c9,5 19,8 30,8c29,0 52,-23 52,-52S475,242 446,242z M532,254c-53,0 -96,43 -96,96v150h192V350C628,297 585,254 532,254z M771,114l-192,208l23,21l192,-208c11,-12 11,-32 -1,-43C781,81 761,81 771,114z" />
+
+    <!-- Baseball -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M160,380 A40,40 0 1,1 160.01,380 Z" />
+</vector>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="480dp"
+    android:viewportWidth="360"
+    android:viewportHeight="480">
+
+    <!-- Outfield grass (dark green) -->
+    <path
+        android:pathData="M180,20 L340,460 L20,460 Z"
+        android:fillColor="#1B5E20"
+        android:strokeWidth="0" />
+
+    <!-- Infield dirt (tan/brown) -->
+    <path
+        android:pathData="M180,155 L280,325 L180,420 L80,325 Z"
+        android:fillColor="#8D6E63"
+        android:strokeWidth="0" />
+
+    <!-- Foul lines -->
+    <path
+        android:pathData="M180,420 L20,460"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M180,420 L340,460"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+
+    <!-- Infield grass (lighter green diamond) -->
+    <path
+        android:pathData="M180,185 L258,305 L180,390 L102,305 Z"
+        android:fillColor="#2E7D32"
+        android:strokeWidth="0" />
+
+    <!-- Pitcher's mound circle -->
+    <path
+        android:pathData="M180,282 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0"
+        android:fillColor="#A1887F"
+        android:strokeWidth="0" />
+
+    <!-- Pitcher's rubber (white rectangle) -->
+    <path
+        android:pathData="M174,285 L186,285 L186,289 L174,289 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0" />
+
+    <!-- Home plate (at bottom) -->
+    <path
+        android:pathData="M175,415 L185,415 L185,421 L180,425 L175,421 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0" />
+
+    <!-- First base (right) -->
+    <path
+        android:pathData="M271,320 L281,320 L281,330 L271,330 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0" />
+
+    <!-- Second base (top) -->
+    <path
+        android:pathData="M175,150 L185,150 L185,160 L175,160 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0" />
+
+    <!-- Third base (left) -->
+    <path
+        android:pathData="M79,320 L89,320 L89,330 L79,330 Z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0" />
+
+    <!-- Basepaths -->
+    <path
+        android:pathData="M180,420 L276,325"
+        android:strokeColor="#C8A96E"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M276,325 L180,155"
+        android:strokeColor="#C8A96E"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M180,155 L84,325"
+        android:strokeColor="#C8A96E"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M84,325 L180,420"
+        android:strokeColor="#C8A96E"
+        android:strokeWidth="2" />
+
+    <!-- Batter's boxes -->
+    <path
+        android:pathData="M163,410 L172,410 L172,428 L163,428 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M188,410 L197,410 L197,428 L188,428 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+    <!-- Catcher's box -->
+    <path
+        android:pathData="M170,427 L190,427 L190,440 L170,440 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1" />
+
+    <!-- Outfield warning track arc -->
+    <path
+        android:pathData="M35,448 Q180,30 325,448"
+        android:fillColor="#00000000"
+        android:strokeColor="#795548"
+        android:strokeWidth="8" />
+
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+      The MLB logo PNG is 640x940 (portrait). Adaptive icon canvas = 108dp.
+      Insets shrink the draw area to ~60x88dp which fits the portrait ratio
+      and keeps the full logo visible within the 72dp safe zone.
+    -->
+    <item
+        android:drawable="@drawable/mlb_logo"
+        android:left="24dp"
+        android:right="24dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</layer-list>

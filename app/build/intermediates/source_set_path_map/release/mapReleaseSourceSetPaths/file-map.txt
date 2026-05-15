@@ -1,0 +1,57 @@
+com.baseballnerd.app-jetified-lifecycle-livedata-ktx-2.7.0-0 /Users/henrievjen/.gradle/caches/8.10.2/transforms/0da9bd38d0e79983e68eb2ed51146461/transformed/jetified-lifecycle-livedata-ktx-2.7.0/res
+com.baseballnerd.app-jetified-emoji2-1.3.0-1 /Users/henrievjen/.gradle/caches/8.10.2/transforms/1386837793bfeab6172ba1930eae15c3/transformed/jetified-emoji2-1.3.0/res
+com.baseballnerd.app-jetified-tracing-1.2.0-2 /Users/henrievjen/.gradle/caches/8.10.2/transforms/1821210adc67ce1626a520ff629bc65c/transformed/jetified-tracing-1.2.0/res
+com.baseballnerd.app-navigation-ui-ktx-2.7.6-3 /Users/henrievjen/.gradle/caches/8.10.2/transforms/1874789121fe01cfe7499d0f3cfda9b9/transformed/navigation-ui-ktx-2.7.6/res
+com.baseballnerd.app-jetified-window-1.0.0-4 /Users/henrievjen/.gradle/caches/8.10.2/transforms/18767f5058d55642195bd887abd0e6ec/transformed/jetified-window-1.0.0/res
+com.baseballnerd.app-recyclerview-1.3.2-5 /Users/henrievjen/.gradle/caches/8.10.2/transforms/19a75c393c78b6457d94a5e81d846f6d/transformed/recyclerview-1.3.2/res
+com.baseballnerd.app-jetified-viewpager2-1.1.0-beta02-6 /Users/henrievjen/.gradle/caches/8.10.2/transforms/1e9bb3ea02bcc5b50e10362ab9f80854/transformed/jetified-viewpager2-1.1.0-beta02/res
+com.baseballnerd.app-lifecycle-livedata-core-2.7.0-7 /Users/henrievjen/.gradle/caches/8.10.2/transforms/1fd998b97176b6f6d77c075f2c58b8af/transformed/lifecycle-livedata-core-2.7.0/res
+com.baseballnerd.app-navigation-common-2.7.6-8 /Users/henrievjen/.gradle/caches/8.10.2/transforms/2d9066acf4edadb8eba8181b6d73c5fc/transformed/navigation-common-2.7.6/res
+com.baseballnerd.app-lifecycle-runtime-2.7.0-9 /Users/henrievjen/.gradle/caches/8.10.2/transforms/2ec40f1893ecf1add5b25c3329871bb6/transformed/lifecycle-runtime-2.7.0/res
+com.baseballnerd.app-constraintlayout-2.1.4-10 /Users/henrievjen/.gradle/caches/8.10.2/transforms/325a8647bca5e4d0e46f2a949d727edb/transformed/constraintlayout-2.1.4/res
+com.baseballnerd.app-drawerlayout-1.1.1-11 /Users/henrievjen/.gradle/caches/8.10.2/transforms/36b55867b3b8de79fbf2e6af8dde3f87/transformed/drawerlayout-1.1.1/res
+com.baseballnerd.app-jetified-lifecycle-process-2.7.0-12 /Users/henrievjen/.gradle/caches/8.10.2/transforms/47b7b6be286b7d2c73d65d61c6a112e4/transformed/jetified-lifecycle-process-2.7.0/res
+com.baseballnerd.app-appcompat-1.7.0-13 /Users/henrievjen/.gradle/caches/8.10.2/transforms/4cb61917575c428f7d2d2795d9769a78/transformed/appcompat-1.7.0/res
+com.baseballnerd.app-jetified-annotation-experimental-1.4.1-14 /Users/henrievjen/.gradle/caches/8.10.2/transforms/537d0d270987d15bcfbb6f90d597af15/transformed/jetified-annotation-experimental-1.4.1/res
+com.baseballnerd.app-transition-1.4.1-15 /Users/henrievjen/.gradle/caches/8.10.2/transforms/626d2e977cf55cb4ae27cd31ce4ea676/transformed/transition-1.4.1/res
+com.baseballnerd.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-16 /Users/henrievjen/.gradle/caches/8.10.2/transforms/69f43c6fa9ff98b1bd26d469cb8e56d1/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/res
+com.baseballnerd.app-navigation-runtime-2.7.6-17 /Users/henrievjen/.gradle/caches/8.10.2/transforms/6a157368b5b4ec7de2ca76da8cf1d450/transformed/navigation-runtime-2.7.6/res
+com.baseballnerd.app-cardview-1.0.0-18 /Users/henrievjen/.gradle/caches/8.10.2/transforms/6ae6773c11b8a1095131acdde5f6759e/transformed/cardview-1.0.0/res
+com.baseballnerd.app-jetified-customview-poolingcontainer-1.0.0-19 /Users/henrievjen/.gradle/caches/8.10.2/transforms/6e44dbad06b3910e00ed0bc72035f6ae/transformed/jetified-customview-poolingcontainer-1.0.0/res
+com.baseballnerd.app-jetified-activity-1.9.3-20 /Users/henrievjen/.gradle/caches/8.10.2/transforms/7352184dcc03dbf9d2e5a160856156a3/transformed/jetified-activity-1.9.3/res
+com.baseballnerd.app-coordinatorlayout-1.1.0-21 /Users/henrievjen/.gradle/caches/8.10.2/transforms/79583db2e4bbadf6781bc8ffea9831f0/transformed/coordinatorlayout-1.1.0/res
+com.baseballnerd.app-swiperefreshlayout-1.1.0-22 /Users/henrievjen/.gradle/caches/8.10.2/transforms/7acf33b8e5ac0071356c0b8e249253cc/transformed/swiperefreshlayout-1.1.0/res
+com.baseballnerd.app-navigation-runtime-ktx-2.7.6-23 /Users/henrievjen/.gradle/caches/8.10.2/transforms/7f28a02f612f902b58e52121cf5545e4/transformed/navigation-runtime-ktx-2.7.6/res
+com.baseballnerd.app-jetified-lifecycle-viewmodel-ktx-2.7.0-24 /Users/henrievjen/.gradle/caches/8.10.2/transforms/801d1c1de5b15136c237ce192fd8b70e/transformed/jetified-lifecycle-viewmodel-ktx-2.7.0/res
+com.baseballnerd.app-jetified-savedstate-1.2.1-25 /Users/henrievjen/.gradle/caches/8.10.2/transforms/805bfd4f205117360d49515e0c04c731/transformed/jetified-savedstate-1.2.1/res
+com.baseballnerd.app-jetified-activity-ktx-1.9.3-26 /Users/henrievjen/.gradle/caches/8.10.2/transforms/81ffdeb62f0016a2bc7ceb35770d49ee/transformed/jetified-activity-ktx-1.9.3/res
+com.baseballnerd.app-lifecycle-livedata-2.7.0-27 /Users/henrievjen/.gradle/caches/8.10.2/transforms/870acbe0abbd58fb9d291841dca681e7/transformed/lifecycle-livedata-2.7.0/res
+com.baseballnerd.app-navigation-fragment-ktx-2.7.6-28 /Users/henrievjen/.gradle/caches/8.10.2/transforms/87172ea935ac1e300f231fce59eaf173/transformed/navigation-fragment-ktx-2.7.6/res
+com.baseballnerd.app-jetified-appcompat-resources-1.7.0-29 /Users/henrievjen/.gradle/caches/8.10.2/transforms/913eacd51517851475c098bc7efe3adf/transformed/jetified-appcompat-resources-1.7.0/res
+com.baseballnerd.app-jetified-core-ktx-1.15.0-30 /Users/henrievjen/.gradle/caches/8.10.2/transforms/977134c605159a7a5432e17cb792ee4e/transformed/jetified-core-ktx-1.15.0/res
+com.baseballnerd.app-jetified-lifecycle-runtime-ktx-2.7.0-31 /Users/henrievjen/.gradle/caches/8.10.2/transforms/9ac8cfc2de5d29e4adceb0cec934f92a/transformed/jetified-lifecycle-runtime-ktx-2.7.0/res
+com.baseballnerd.app-fragment-1.6.2-32 /Users/henrievjen/.gradle/caches/8.10.2/transforms/a4a2afd0c5eac9f809037d05cbe07a83/transformed/fragment-1.6.2/res
+com.baseballnerd.app-jetified-savedstate-ktx-1.2.1-33 /Users/henrievjen/.gradle/caches/8.10.2/transforms/a9c69e903ddf3197c85aa4e7a9a057c2/transformed/jetified-savedstate-ktx-1.2.1/res
+com.baseballnerd.app-jetified-androidsvg-aar-1.4-34 /Users/henrievjen/.gradle/caches/8.10.2/transforms/ac6644fb25975c6ce25fb7bf0ca827ca/transformed/jetified-androidsvg-aar-1.4/res
+com.baseballnerd.app-navigation-common-ktx-2.7.6-35 /Users/henrievjen/.gradle/caches/8.10.2/transforms/b772182b46e14155e10cc78ae9ea130e/transformed/navigation-common-ktx-2.7.6/res
+com.baseballnerd.app-jetified-fragment-ktx-1.6.2-36 /Users/henrievjen/.gradle/caches/8.10.2/transforms/b7eb50f383d4478c66c841c0bcb7e1e3/transformed/jetified-fragment-ktx-1.6.2/res
+com.baseballnerd.app-core-runtime-2.2.0-37 /Users/henrievjen/.gradle/caches/8.10.2/transforms/bb437b37397eff97da8af336782041b5/transformed/core-runtime-2.2.0/res
+com.baseballnerd.app-core-1.15.0-38 /Users/henrievjen/.gradle/caches/8.10.2/transforms/bf0a6cb477963373f287db5f18aa6b59/transformed/core-1.15.0/res
+com.baseballnerd.app-navigation-fragment-2.7.6-39 /Users/henrievjen/.gradle/caches/8.10.2/transforms/c882f92c0f7e5b539496877aab1eb0b8/transformed/navigation-fragment-2.7.6/res
+com.baseballnerd.app-jetified-lifecycle-livedata-core-ktx-2.7.0-40 /Users/henrievjen/.gradle/caches/8.10.2/transforms/cbb2019f6019b20fbfd402f052db4a58/transformed/jetified-lifecycle-livedata-core-ktx-2.7.0/res
+com.baseballnerd.app-slidingpanelayout-1.2.0-41 /Users/henrievjen/.gradle/caches/8.10.2/transforms/cf89846b2d1c3eca4e97d78c42a6159e/transformed/slidingpanelayout-1.2.0/res
+com.baseballnerd.app-jetified-profileinstaller-1.3.1-42 /Users/henrievjen/.gradle/caches/8.10.2/transforms/cfd22666b88aa5600fd776d3e862427b/transformed/jetified-profileinstaller-1.3.1/res
+com.baseballnerd.app-jetified-startup-runtime-1.1.1-43 /Users/henrievjen/.gradle/caches/8.10.2/transforms/e1045a1590a4902a7a57249ee0e5e701/transformed/jetified-startup-runtime-1.1.1/res
+com.baseballnerd.app-jetified-emoji2-views-helper-1.3.0-44 /Users/henrievjen/.gradle/caches/8.10.2/transforms/e2e1a1fddec1513d85c3281ead023301/transformed/jetified-emoji2-views-helper-1.3.0/res
+com.baseballnerd.app-navigation-ui-2.7.6-45 /Users/henrievjen/.gradle/caches/8.10.2/transforms/f14ca14bfb9000a54d47a9536a483400/transformed/navigation-ui-2.7.6/res
+com.baseballnerd.app-jetified-coil-base-2.5.0-46 /Users/henrievjen/.gradle/caches/8.10.2/transforms/f4b5f0fcd732f19f38243e7ce655a78d/transformed/jetified-coil-base-2.5.0/res
+com.baseballnerd.app-material-1.11.0-47 /Users/henrievjen/.gradle/caches/8.10.2/transforms/f534f622eba93dfee46c0a95343fb834/transformed/material-1.11.0/res
+com.baseballnerd.app-lifecycle-viewmodel-2.7.0-48 /Users/henrievjen/.gradle/caches/8.10.2/transforms/f7559a24a39c38aba0448b55ae980662/transformed/lifecycle-viewmodel-2.7.0/res
+com.baseballnerd.app-pngs-49 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/generated/res/pngs/release
+com.baseballnerd.app-resValues-50 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/generated/res/resValues/release
+com.baseballnerd.app-packageReleaseResources-51 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.baseballnerd.app-packageReleaseResources-52 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.baseballnerd.app-merged-not-compiled-resources-53 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/intermediates/merged-not-compiled-resources/release
+com.baseballnerd.app-release-54 /Users/henrievjen/Downloads/mlb_fixed 29/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.baseballnerd.app-main-55 /Users/henrievjen/Downloads/mlb_fixed 29/app/src/main/res
+com.baseballnerd.app-release-56 /Users/henrievjen/Downloads/mlb_fixed 29/app/src/release/res

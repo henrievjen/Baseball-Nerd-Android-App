@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baseball Nerd</string>
+    <string name="nav_scores">Scores</string>
+    <string name="nav_standings">Standings</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_more">More</string>
+    <string name="vs">VS</string>
+    <string name="gs_format">%1$d GS</string>
+    <string name="no_starts_at_position">No players have started at this position this season.</string>
+    <string name="no_hitter">NO HITTER</string>
+    <string name="perfect_game">PERFECT GAME</string>
+
+    <!-- More Page -->
+    <string name="more_header">More</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="resources_header">RESOURCES</string>
+    <string name="roster_depth">Roster Depth</string>
+    <string name="awards">Awards</string>
+    <string name="preferences_header">PREFERENCES</string>
+    <string name="scoreboard_layout">Scoreboard Layout</string>
+    <string name="card_view">Card View</string>
+    <string name="list_view">List View</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>

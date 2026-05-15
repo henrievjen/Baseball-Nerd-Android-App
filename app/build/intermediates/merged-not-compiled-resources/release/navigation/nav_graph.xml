@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scoresFragment">
+
+    <fragment android:id="@+id/scoresFragment"
+        android:name="com.baseballnerd.app.ui.scores.ScoresFragment"
+        android:label="Scores">
+        <action
+            android:id="@+id/action_scoresFragment_to_gameDetailFragment"
+            app:destination="@id/gameDetailFragment" />
+        <action
+            android:id="@+id/action_scoresFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+        <action
+            android:id="@+id/action_scoresFragment_to_teamScheduleFragment"
+            app:destination="@id/teamScheduleFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/standingsFragment"
+        android:name="com.baseballnerd.app.ui.standings.StandingsFragment"
+        android:label="Standings" />
+
+    <fragment android:id="@+id/statsFragment"
+        android:name="com.baseballnerd.app.ui.stats.StatsFragment"
+        android:label="Stats">
+        <action
+            android:id="@+id/action_statsFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/moreFragment"
+        android:name="com.baseballnerd.app.ui.more.MoreFragment"
+        android:label="More">
+        <action
+            android:id="@+id/action_moreFragment_to_awardsFragment"
+            app:destination="@id/awardsFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_whosHotFragment"
+            app:destination="@id/whosHotFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_positionsFragment"
+            app:destination="@id/positionsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/whosHotFragment"
+        android:name="com.baseballnerd.app.ui.stats.WhosHotFragment"
+        android:label="Who's Hot">
+        <action
+            android:id="@+id/action_whosHotFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/settingsFragment"
+        android:name="com.baseballnerd.app.ui.more.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment android:id="@+id/aboutFragment"
+        android:name="com.baseballnerd.app.ui.more.AboutFragment"
+        android:label="About" />
+
+    <fragment android:id="@+id/positionsFragment"
+        android:name="com.baseballnerd.app.ui.stats.PositionsFragment"
+        android:label="Roster Depth">
+        <action
+            android:id="@+id/action_positionsFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/gameDetailFragment"
+        android:name="com.baseballnerd.app.ui.scores.GameDetailFragment"
+        android:label="Game Detail">
+        <argument android:name="gamePk" app:argType="long" />
+        <argument android:name="date"   app:argType="string" android:defaultValue="" />
+        <action
+            android:id="@+id/action_gameDetailFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+        <action
+            android:id="@+id/action_gameDetailFragment_to_teamScheduleFragment"
+            app:destination="@id/teamScheduleFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/teamScheduleFragment"
+        android:name="com.baseballnerd.app.ui.schedule.TeamScheduleFragment"
+        android:label="Team Schedule">
+        <argument android:name="teamId" app:argType="integer" />
+        <argument android:name="teamName" app:argType="string" />
+        <action
+            android:id="@+id/action_teamScheduleFragment_to_gameDetailFragment"
+            app:destination="@id/gameDetailFragment" />
+        <action
+            android:id="@+id/action_teamScheduleFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/awardsFragment"
+        android:name="com.baseballnerd.app.ui.more.AwardsFragment"
+        android:label="Awards">
+        <action
+            android:id="@+id/action_awardsFragment_to_playerStatsFragment"
+            app:destination="@id/playerStatsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/playerStatsFragment"
+        android:name="com.baseballnerd.app.ui.player.PlayerStatsFragment"
+        android:label="Player Stats">
+        <argument android:name="playerId" app:argType="integer" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_gold">#FFD700</color>
+    <color name="background_primary">#F0F2F7</color>
+    <color name="card_stroke">#1A000000</color>
+    <color name="live_green">#22C55E</color>
+    <color name="mlb_blue">#002D72</color>
+    <color name="mlb_gold">#F59E0B</color>
+    <color name="mlb_green_safe">#22C55E</color>
+    <color name="mlb_navy">#002D72</color>
+    <color name="mlb_red">#C8102E</color>
+    <color name="mlb_white">#FFFFFF</color>
+    <color name="nav_item_selected">#C8102E</color>
+    <color name="nav_item_unselected">#8A94A6</color>
+    <color name="pre_color">#FFD700</color>
+    <color name="st_color">#F59E0B</color>
+    <color name="surface_dark">#FFFFFF</color>
+    <color name="surface_elevated">#E2E6EF</color>
+    <color name="text_primary">#0D1117</color>
+    <color name="text_secondary">#5C6680</color>
+    <color name="white">#FFFFFF</color>
+    <color name="xp_bar_fill">#FFD700</color>
+    <color name="xp_bar_track">#C8CDD8</color>
+    <color name="xp_level_bg">#002D72</color>
+    <string name="app_name">Baseball Nerd</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="awards">Awards</string>
+    <string name="card_view">Card View</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="gs_format">%1$d GS</string>
+    <string name="list_view">List View</string>
+    <string name="more_header">More</string>
+    <string name="nav_more">More</string>
+    <string name="nav_scores">Scores</string>
+    <string name="nav_standings">Standings</string>
+    <string name="nav_stats">Stats</string>
+    <string name="no_hitter">NO HITTER</string>
+    <string name="no_starts_at_position">No players have started at this position this season.</string>
+    <string name="perfect_game">PERFECT GAME</string>
+    <string name="preferences_header">PREFERENCES</string>
+    <string name="resources_header">RESOURCES</string>
+    <string name="roster_depth">Roster Depth</string>
+    <string name="scoreboard_layout">Scoreboard Layout</string>
+    <string name="vs">VS</string>
+    <style name="SpinnerDarkTheme" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+    </style>
+    <style name="SpinnerPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">@color/surface_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+    </style>
+    <style name="Theme.BaseballNerd" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mlb_red</item>
+        <item name="colorPrimaryVariant">@color/mlb_navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/surface_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+</resources>

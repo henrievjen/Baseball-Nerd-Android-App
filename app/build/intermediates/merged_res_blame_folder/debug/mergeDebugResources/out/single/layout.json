@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_score_page.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_score_page.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_stats.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_stats.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_settings.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_hall_of_fame.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_hall_of_fame.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_hot_player.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_hot_player.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_spinner_year_schedule.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year_schedule.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_game_grid_card.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_game_grid_card.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_standings.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_standings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_positions.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_positions.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_stat_leader.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_stat_leader.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_player_stats.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_player_stats.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_more.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_more.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_game_card.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_game_card.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_about.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_scores.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_scores.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_date_tab.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_date_tab.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_awards.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_awards.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_team_schedule.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_team_schedule.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_spinner_year_dropdown.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year_dropdown.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_stat_category.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_stat_category.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_whos_hot.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_whos_hot.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/fragment_game_detail.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_game_detail.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-mergeDebugResources-52:/layout/item_spinner_year.xml",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year.xml"
+    }
+]

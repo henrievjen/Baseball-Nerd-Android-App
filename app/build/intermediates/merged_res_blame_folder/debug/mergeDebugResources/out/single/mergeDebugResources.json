@@ -1,0 +1,290 @@
+[
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_bat_and_ball.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_bat_and_ball.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/color_nav_item_color.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_tab_container.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_tab_container.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_stat_category.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_stat_category.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_game_detail.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_game_detail.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_whos_hot.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_whos_hot.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_positions.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_positions.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_refresh.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_refresh.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/anim_slide_in_right.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_more.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_more.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_baseball_field.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_baseball_field.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_player_stats.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_player_stats.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_standings.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_standings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_launcher_foreground_centered.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_launcher_foreground_centered.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_awards.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_awards.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_level_badge.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_level_badge.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_shape_dashed_line.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/shape_dashed_line.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_score_page.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_score_page.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_hot_player.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_hot_player.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_calendar.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_calendar.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_date_tab.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_date_tab.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_mlb_logo.png.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/mlb_logo.png"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/navigation_nav_graph.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/xml_automotive_app_desc.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/xml/automotive_app_desc.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_play_item.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_play_item.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_glove.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_glove.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_spinner_year.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_shape_live_dot.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/shape_live_dot.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_info.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_spinner_year_schedule.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year_schedule.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_nav_standings.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_nav_standings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_shape_out_empty.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/shape_out_empty.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/anim_slide_out_right.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_baseball_placeholder.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_baseball_placeholder.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_result_popup.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_result_popup.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_lock.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_activity_main.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_spinner_year_dropdown.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_spinner_year_dropdown.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_stats.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_stats.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/anim_slide_in_left.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_back_arrow.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_back_arrow.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_team_schedule.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_team_schedule.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_trophy.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_nav_more.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_nav_more.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_scores.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_scores.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_lock_open.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_lock_open.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_settings.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/anim_slide_out_left.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_stat_leader.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_stat_leader.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_tab_selected.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_tab_selected.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_about.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_spinner.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_game_grid_card.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_game_grid_card.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_nav_scores.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_nav_scores.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_shape_out_filled.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/shape_out_filled.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_settings.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_date_tab_selected.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_date_tab_selected.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_shape_team_circle.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/shape_team_circle.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_fragment_hall_of_fame.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/fragment_hall_of_fame.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/layout_item_game_card.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/layout/item_game_card.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_baseball.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_baseball.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_nav_players.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_nav_players.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_bg_no_hitter_badge.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/bg_no_hitter_badge.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_fire.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_fire.xml"
+    },
+    {
+        "merged": "com.baseballnerd.app-debug-53:/drawable_ic_mlb_logo.xml.flat",
+        "source": "com.baseballnerd.app-main-55:/drawable/ic_mlb_logo.xml"
+    }
+]

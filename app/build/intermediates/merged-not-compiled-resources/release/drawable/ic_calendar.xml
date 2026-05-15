@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Outer rectangle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:pathData="M5,4 h14 a2,2 0 0 1 2,2 v14 a2,2 0 0 1 -2,2 H5 a2,2 0 0 1 -2,-2 V6 a2,2 0 0 1 2,-2 z"/>
+    <!-- Top bar line -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:pathData="M3,9 h18"/>
+    <!-- Left pin -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M8,4 V2"/>
+    <!-- Right pin -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M16,4 V2"/>
+    <!-- Day dots: row 1 -->
+    <path android:fillColor="#FFFFFF" android:pathData="M8,13 m-1,0 a1,1 0 1 1 2,0 a1,1 0 1 1 -2,0"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M12,13 m-1,0 a1,1 0 1 1 2,0 a1,1 0 1 1 -2,0"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M16,13 m-1,0 a1,1 0 1 1 2,0 a1,1 0 1 1 -2,0"/>
+    <!-- Day dots: row 2 -->
+    <path android:fillColor="#FFFFFF" android:pathData="M8,17 m-1,0 a1,1 0 1 1 2,0 a1,1 0 1 1 -2,0"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M12,17 m-1,0 a1,1 0 1 1 2,0 a1,1 0 1 1 -2,0"/>
+</vector>
