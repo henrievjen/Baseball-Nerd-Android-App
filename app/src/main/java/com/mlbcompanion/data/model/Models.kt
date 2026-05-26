@@ -5,7 +5,10 @@ import com.google.gson.annotations.SerializedName
 // ─── Schedule Response ───────────────────────────────────────────────────────
 
 data class ScheduleResponse(val dates: List<ScheduleDate>?)
-data class ScheduleDate(val games: List<GameSummary>?)
+data class ScheduleDate(
+    val date: String?,
+    val games: List<GameSummary>?
+)
 
 data class GameSummary(
     val gamePk: Long,

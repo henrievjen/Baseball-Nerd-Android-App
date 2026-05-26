@@ -1,0 +1,47 @@
+# Built artifacts
+**/build/
+**/out/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration files (sdk path, etc)
+local.properties
+
+# Android Studio / IntelliJ IDEA files
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+*.iml
+*.ipr
+*.iws
+.idea/deploymentTargetDropDown.xml
+
+# Keystore files
+*.jks
+*.keystore
+*.p12
+
+# External native build artifacts
+.externalNativeBuild/
+.cxx/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Captures
+*.capt
+
+# Google Services
+# google-services.json
+
+# Lint
+lint/

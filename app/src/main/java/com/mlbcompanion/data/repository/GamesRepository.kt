@@ -108,13 +108,13 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
                 homeStarter = null,
                 venueName = summary.venue?.name,
                 venueTimeZone = summary.venue?.timeZone?.tz,
-                awayNoHitter = checkNoHitter(awayHits, currentInning, inningHalf, true, isFinal),
-                homeNoHitter = checkNoHitter(homeHits, currentInning, inningHalf, false, isFinal),
-                // Perfect game uses the same 9-inning threshold. BB and HBP aren't
-                // available from the schedule linescore, so we pass 0 — if it's
-                // genuinely a perfect game in progress those will also be zero.
-                awayPerfectGame = checkPerfectGame(awayHits, 0, 0, homeErrors, currentInning, inningHalf, true, isFinal),
-                homePerfectGame = checkPerfectGame(homeHits, 0, 0, awayErrors, currentInning, inningHalf, false, isFinal),
+                // Away no-hitter: away pitchers held home batters hitless (homeHits == 0)
+                // Home no-hitter: home pitchers held away batters hitless (awayHits == 0)
+                awayNoHitter = checkNoHitter(homeHits, currentInning, inningHalf, true, isFinal),
+                homeNoHitter = checkNoHitter(awayHits, currentInning, inningHalf, false, isFinal),
+                // BB/HBP not available from schedule linescore — bbKnown=false, only confirms final
+                awayPerfectGame = checkPerfectGame(homeHits, 0, 0, homeErrors, currentInning, inningHalf, true, isFinal, bbKnown = false),
+                homePerfectGame = checkPerfectGame(awayHits, 0, 0, awayErrors, currentInning, inningHalf, false, isFinal, bbKnown = false),
                 gameType = summary.gameType,
                 seriesDescription = summary.seriesDescription,
                 seriesGameNumber = summary.seriesGameNumber,
@@ -124,11 +124,62 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
         }
     }
 
-    private fun checkNoHitter(hits: Int, inning: Int, half: String, isAway: Boolean, isFinal: Boolean): Boolean {
-        if (isFinal) return hits == 0 && inning >= 9
-        if (hits > 0) return false
-        // Threshold: 9 innings.
-        return inning >= 9
+    // A no-hitter: the pitching team has allowed zero hits.
+    // - Walks and HBPs are allowed (they don't break a no-hitter).
+    // - For a completed game: requires zero hits through at least 9 innings.
+    // - For a live game: flag after 6+ complete innings so it's meaningful but not constant noise.
+    //   "Complete" means: if pitching team is Away (pitching top half), inning must be > threshold;
+    //   if pitching team is Home (pitching bottom half), current inning >= threshold and half == "bottom"
+    //   or inning > threshold.
+    // - pitchingTeamHitsAllowed: hits recorded by the BATTING team (home hits = away pitchers' stat).
+    private fun checkNoHitter(
+        pitchingTeamHitsAllowed: Int,
+        inning: Int,
+        half: String,
+        awayTeamIsPitching: Boolean,
+        isFinal: Boolean
+    ): Boolean {
+        if (pitchingTeamHitsAllowed > 0) return false
+        if (isFinal) return inning >= 9
+
+        // Live game — require enough innings to be meaningful
+        val threshold = 6
+        return if (awayTeamIsPitching) {
+            // Away pitching = top half innings; complete when we move past the top
+            inning > threshold || (inning == threshold && half.equals("bottom", ignoreCase = true))
+        } else {
+            // Home pitching = bottom half innings; complete when inning advances
+            inning > threshold
+        }
+    }
+
+    // A perfect game: the pitching team has allowed NO baserunners of any kind —
+    // no hits, no walks (BB), no hit-by-pitches (HBP), no reaching on errors.
+    // bbKnown=false means BB/HBP data wasn't available (scores card path) —
+    // in that case only confirm for final games where hits+errors=0.
+    private fun checkPerfectGame(
+        pitchingTeamHitsAllowed: Int,
+        bb: Int,
+        hbp: Int,
+        errors: Int,
+        inning: Int,
+        half: String,
+        awayTeamIsPitching: Boolean,
+        isFinal: Boolean,
+        bbKnown: Boolean = true
+    ): Boolean {
+        if (pitchingTeamHitsAllowed > 0 || errors > 0) return false
+        if (bbKnown && (bb > 0 || hbp > 0)) return false
+        // Without BB/HBP data, only confirm as final (can't safely flag live)
+        if (!bbKnown) return isFinal && inning >= 9
+        if (isFinal) return inning >= 9
+
+        val threshold = 6
+        return if (awayTeamIsPitching) {
+            inning > threshold || (inning == threshold && half.equals("bottom", ignoreCase = true))
+        } else {
+            inning > threshold
+        }
     }
 
     suspend fun getLiveAndUpcomingGameSummaries(): List<GameSummary> {
@@ -149,14 +200,20 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
         val dateToUse = if (date?.contains("T") == true) date.substring(0, 10) else date
             ?: SimpleDateFormat("yyyy-MM-dd", Locale.US).format(Date())
 
-        // Use gamePks filter to ensure we get the correct game regardless of date mismatches
+        // Use gamePks and date filters to ensure we get the correct instance of the game.
+        // Postponed games may appear on multiple dates (original and rescheduled).
         val scheduleResp = runCatching {
             api.getSchedule(
+                date = dateToUse,
                 gamePks = gamePk.toString(),
                 hydrate = "broadcasts,venue(timeZone),probablePitcher(stats(group=[pitching],type=[season],gameType=R))"
             )
         }.getOrNull()
-        val summary = scheduleResp?.dates?.flatMap { it.games ?: emptyList() }?.find { it.gamePk == gamePk }
+
+        // Find the summary that matches the gamePk AND is on the requested date.
+        // This avoids picking up a "Postponed" entry from a previous date if multiple instances are returned.
+        val summary = scheduleResp?.dates?.find { it.date == dateToUse }?.games?.find { it.gamePk == gamePk }
+            ?: scheduleResp?.dates?.flatMap { it.games ?: emptyList() }?.find { it.gamePk == gamePk }
 
         var status = summary?.status?.abstractGameState ?: ""
         val detailed = summary?.status?.detailedState ?: ""
@@ -389,23 +446,40 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
             isStartTimeTBD = summary?.status?.startTimeTBD == true,
             awayBullpenUsage = awayBullpen,
             homeBullpenUsage = homeBullpen,
-            awayNoHitter = checkNoHitter(linescore.teams?.away?.hits ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", true, isFinal),
-            homeNoHitter = checkNoHitter(linescore.teams?.home?.hits ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", false, isFinal),
-            awayPerfectGame = checkPerfectGame(linescore.teams?.away?.hits ?: 0, 0, 0, linescore.teams?.home?.errors ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", true, isFinal),
-            homePerfectGame = checkPerfectGame(linescore.teams?.home?.hits ?: 0, 0, 0, linescore.teams?.away?.errors ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", false, isFinal),
+            // Away no-hitter: away pitchers held home batters hitless
+            // Home no-hitter: home pitchers held away batters hitless
+            awayNoHitter = checkNoHitter(linescore.teams?.home?.hits ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", true, isFinal),
+            homeNoHitter = checkNoHitter(linescore.teams?.away?.hits ?: 0, linescore.currentInning ?: 0, linescore.inningHalf ?: "", false, isFinal),
+            // Perfect game: use real BB from pitching team stats and HBP from batting team stats
+            // Away perfect game = home pitchers' BB + away batters' HBP + home errors all zero
+            awayPerfectGame = checkPerfectGame(
+                pitchingTeamHitsAllowed = linescore.teams?.home?.hits ?: 0,
+                bb = homeData.teamStats?.pitching?.baseOnBalls ?: 0,
+                hbp = awayData.teamStats?.batting?.hitByPitch ?: 0,
+                errors = linescore.teams?.home?.errors ?: 0,
+                inning = linescore.currentInning ?: 0,
+                half = linescore.inningHalf ?: "",
+                awayTeamIsPitching = true,
+                isFinal = isFinal,
+                bbKnown = true
+            ),
+            homePerfectGame = checkPerfectGame(
+                pitchingTeamHitsAllowed = linescore.teams?.away?.hits ?: 0,
+                bb = awayData.teamStats?.pitching?.baseOnBalls ?: 0,
+                hbp = homeData.teamStats?.batting?.hitByPitch ?: 0,
+                errors = linescore.teams?.away?.errors ?: 0,
+                inning = linescore.currentInning ?: 0,
+                half = linescore.inningHalf ?: "",
+                awayTeamIsPitching = false,
+                isFinal = isFinal,
+                bbKnown = true
+            ),
             gameType = summary?.gameType,
             seriesDescription = summary?.seriesDescription,
             seriesGameNumber = summary?.seriesGameNumber,
             gamesInSeries = summary?.gamesInSeries,
             broadcasts = summary?.broadcasts
         )
-    }
-
-    private fun checkPerfectGame(hits: Int, bb: Int, hbp: Int, errors: Int, inning: Int, half: String, isAway: Boolean, isFinal: Boolean): Boolean {
-        if (isFinal) return hits == 0 && bb == 0 && hbp == 0 && errors == 0 && inning >= 9
-        if (hits > 0 || bb > 0 || hbp > 0 || errors > 0) return false
-        // Threshold: 9 innings.
-        return inning >= 9
     }
 
     private fun buildStarterModel(p: PlayerReference, box: BoxscoreResponse, side: String): StarterModel? {
@@ -589,9 +663,10 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
         // Get season stats from person hydrate if available
         val seasonContainer = player.person?.stats?.find {
             it.group?.displayName?.lowercase() == "pitching" &&
-                    it.type?.displayName?.lowercase() == "season"
+                    it.type?.displayName?.equals("season", ignoreCase = true) == true
         }
-        val seasonStats = seasonContainer?.stats?.pitching
+        val s2 = seasonContainer?.stats?.pitching
+        val split = seasonContainer?.splits?.firstOrNull()?.stat
 
         return PitcherModel(
             id = pid,
@@ -600,7 +675,7 @@ class GamesRepository(private val api: MlbApiService = MlbApiClient.service) {
             er = s.earnedRuns ?: 0,
             k = s.strikeOuts ?: 0,
             bb = s.baseOnBalls ?: 0,
-            seasonEra = seasonStats?.era ?: player.person?.stats?.firstOrNull()?.splits?.firstOrNull()?.stat?.era ?: s.era ?: "-.--"
+            seasonEra = s2?.era ?: split?.era ?: player.person?.stats?.firstOrNull()?.splits?.firstOrNull()?.stat?.era ?: s.era ?: "-.--"
         )
     }
 
